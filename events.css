@@ -1,0 +1,201 @@
+body{
+	margin:auto 0;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("events4-compressor.jpg"); background-attachment: fixed;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.main-nav{
+	display: flex;
+	list-style: none;
+	font-size: 20px;
+	margin:0;
+}
+
+
+
+.push{
+	margin-right:auto;
+	font-size: 40px;
+	color: #f5eaea;
+	font-weight: bold;
+}
+.subtext{
+	margin-right:auto;
+	font-size: 15px;
+	position: relative;
+	bottom: 25%;
+	left:12%;
+	color:#f5eaea;
+	font-family: Century Gothic;
+}
+a.responsive{
+	font-size: 20px;
+}
+@media only screen and (max-width: 1000px){
+	a.responsive{
+		padding: 10px;
+		/*position: relative;*/
+		font-size: 30px;
+	}
+}
+li{
+	padding:20px;
+	color:black;
+	font-family: Century Gothic;
+	font-size: 20px;
+}
+
+.dropdown{
+	height: 100px;
+}
+.dropdown-content{
+	height: 10px;
+}
+ul li ul li{
+	position: relative;
+	right:65px;
+	font-size: 15px;
+	list-style-type: none;
+	display: none;
+	transition: 0.3s ease;
+}
+ul li:hover ul li{
+	display: block;
+	
+}
+
+
+
+
+a{
+	text-decoration: none;
+}
+ul li a{
+	text-decoration: none;
+	color:#f5eaea;
+	padding: 15px 42px;
+	border: 1px solid black transparent;
+	transition: 0.3s ease;
+}
+ul li a:hover{
+	background-color:#f5eaea;
+	color:black;
+}
+.dropdown .dropdown-content a{
+	background-color: rgba(0,0,0,0);
+	color: #f5eaea;
+	opacity: 0.7;
+	transition: 0.3s ease;
+	font-size: 18px;
+
+}
+.dropdown .dropdown-content a:hover{
+	color: #f5eaea;
+	opacity: 1;
+}
+
+.container{
+	position: relative;
+	top: 10%;
+	height: auto;
+	width: 90%;
+	margin:auto;
+	padding: 45px 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 2vh;
+	grid-auto-flow: dense;
+}
+.container .img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9 );
+	border-radius: 2px;
+}
+.container .img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 1;
+}
+
+.container .img:nth-child(2n+3){
+	grid-row-start: span 1;
+}
+.container .img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.container .img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+.container .img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start : span 1;
+}
+.container .img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	/*filter: brightness(0.5) grayscale(100);*/
+	transition: 0.5s ease-in-out;
+}
+.container .img:hover img{
+	transform: scale(1.1);
+	/*filter: brightness(1) grayscale(0);*/
+	cursor: pointer;
+}
+.email{
+	position: relative;
+	left:40px;
+	top: 20px;
+	float: left;
+	font-size: 15px;
+	color:#f5eaea;
+	font-family: Century Gothic;
+	transition: 0.4s ease;
+	opacity: 0.7;
+}
+
+footer{
+	position: relative;
+	top: 10%;
+}
+.fa {
+	position: relative;
+	left:450px;
+  padding: 40px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s ease;
+  align-items: center;
+}
+
+
+.fa-facebook {
+	position: relative;
+	left:400px;
+ 	background: none;
+ 	color: #f5eaea;
+
+} 
+.fa-instagram {
+	position: relative;
+	left:500px;
+  background: none;
+  color: #f5eaea;
+
+}
+.fa-instagram:hover{
+	color: plum;
+}
+.email:hover {
+	cursor: auto;
+	color: #f5eaea;
+	opacity: 1;
+}

@@ -1,0 +1,296 @@
+body{
+	margin:auto 0;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(concerts20.jpg); background-attachment: fixed;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	/* overflow: hidden; */
+}
+
+.main-nav{
+	display: flex;
+	list-style: none;
+	font-size: 20px;
+	margin:0;
+}
+
+
+
+.push{
+	margin-right:250px;
+	font-size: 40px;
+	color: #f5eaea;
+	font-weight: bold;
+}
+@media only screen and (max-width: 1000px){
+	.push{
+		margin-right: 130px;
+	}
+}
+.subtext{
+	margin-right:auto;
+	font-size: 15px;
+	position: relative;
+	bottom: 25%;
+	left:12%;
+	color:#f5eaea;
+	font-family: Century Gothic;
+}
+a.responsive{
+	font-size: 20px;
+}
+@media only screen and (max-width: 1000px){
+	a.responsive{
+		padding: 10px;
+		/*position: relative;*/
+		font-size: 30px;
+	}
+}
+li{
+	padding:20px;
+	color:black;
+	font-family: Century Gothic;
+	font-size: 20px;
+}
+
+.dropdown{
+	height: 100px;
+}
+.dropdown-content{
+	height: 10px;
+}
+ul li ul li{
+	position: relative;
+	right:65px;
+	font-size: 15px;
+	list-style-type: none;
+	display: none;
+	transition: 0.3s ease;
+}
+ul li:hover ul li{
+	display: block;
+	
+}
+
+
+
+
+a{
+	text-decoration: none;
+}
+ul li a{
+	text-decoration: none;
+	color:#f5eaea;
+	padding: 15px 42px;
+	border: 1px solid black transparent;
+	transition: 0.3s ease;
+}
+ul li a:hover{
+	background-color:#f5eaea;
+	color:black;
+}
+.dropdown .dropdown-content a{
+	background-color: rgba(0,0,0,0);
+	color: #f5eaea;
+	opacity: 0.7;
+	transition: 0.3s ease;
+	font-size: 18px;
+
+}
+.dropdown .dropdown-content a:hover{
+	color: #f5eaea;
+	opacity: 1;
+}
+
+.main{
+	position: relative;
+	left: 45%;
+	top: 40%;
+	width: 800px;
+	height: 250px;
+ 	text-align: left;
+ 	font-family: Century gothic;
+ 	color: #f5eaea;
+ 	font-size: 30px;
+}
+@media only screen and( max-width: 1000px){
+	.main{
+		top: 100%;
+		font-size: 40px;
+	}
+}	
+
+.address{
+	color: #f5eaea !important;
+	transition: 0.5s ease;
+}
+.address:hover{
+	transform: scale(1.1);
+}
+.image{
+	position: relative;
+	height: 400px;
+	width: 300px;
+	right: 50%;
+	bottom:370px;
+	border-radius: 20px;
+	filter: brightness(0.5) grayscale(100);
+	transition: 0.5s ease-in-out;
+	object-fit: cover;
+}
+.image:hover{
+	transform: scale(1.1);
+	filter: brightness(1) grayscale(0);
+	cursor: pointer;
+}
+.text-decoration-none{
+	text-decoration: none;
+}
+@media only screen and( max-width: 650px){
+	.tel{
+		font-size: 40px;
+	}
+	.address{
+		font-size: 40px;
+	}
+}	
+footer{
+	position: relative;
+	top: 600px;
+	left: 300px;
+}
+
+
+
+
+
+
+/*.wrapper{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	width: 100%;
+	padding: 0 20px;
+}
+.contact-form{
+	max-width: 550px;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.8);
+	border-radius: 8px;
+	display: flex;
+	box-shadow: 0 0 10px rgba(0,0,0,0.13)
+}
+.input-fields{
+	display: flex;
+	flex-direction: column;
+	margin-right: 4%;
+}
+.input-fields,
+.msg{
+	width: 48%;	
+}
+
+.input-fields .input,
+.msg textarea{
+	margin: 10px 0;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #f5eaea;
+	padding: 10px;
+	color: #f5eaea;
+	width: 90%;
+	height: 50px;
+}
+.msg textarea{
+	height: 212px;
+	font-family: Century gothic;
+}
+::-webkit-input-placeholder{
+	color: #f5eaea;	
+}
+::-moz-input-placeholder{
+	color: #f5eaea;	
+}
+::-ms-input-placeholder{
+	color: #f5eaea;	
+}
+
+
+.btn{
+	background: #f5eaea;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	color: black;
+	cursor: pointer;
+	text-transform: uppercase;
+	width: 150px;
+	font-family: Century gothic;
+}
+
+@media screen and (max-width: 600px){
+	.contact-form{
+		flex-direction: column;
+	}
+	.msg textarea{
+		height: 80px;
+	}
+	.input-fields,
+	.msg{
+		width: 100%;
+	}
+}
+.input{
+	font-family: Century gothic;
+}
+footer{
+	position: relative;
+	top: 10%;
+}
+.email{
+	position: relative;
+	left:40px;
+	top: 420px;
+	float: left;
+	font-size: 15px;
+	color:#f5eaea;
+	font-family: Century Gothic;
+	transition: 0.4s ease;
+	opacity: 0.7;
+}
+.fa {
+	position: relative;
+	left:450px;
+	top: 400px;
+  padding: 40px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s ease;
+  align-items: center;
+}
+
+
+.fa:hover {
+  transform: scale(1.1);
+  
+}
+.fa-facebook {
+	position: relative;
+	left:400px;
+  background: none;
+  color: white;
+}
+.fa-instagram {
+	position: relative;
+	left:500px;
+  background: none;
+  color: white;
+}
+.email:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+	color: #f5eaea;
+	opacity: 1;
+}*/
